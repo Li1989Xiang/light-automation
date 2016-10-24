@@ -23,10 +23,10 @@ public class GenForIOS implements IDriverGenerator {
 		IOSDriver<IOSElement> driver = null;
 		
 		DesiredCapabilities dc = new DesiredCapabilities();
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
-		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.4");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "dc.devices");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "dc.platform_version");
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
-		dc.setCapability(MobileCapabilityType.APP, Setting.getProperty("app"));
+		dc.setCapability(MobileCapabilityType.APP, Setting.getProperty("dc.app"));
 		dc.setCapability(MobileCapabilityType.NO_RESET, "true");
 		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "300");
 
